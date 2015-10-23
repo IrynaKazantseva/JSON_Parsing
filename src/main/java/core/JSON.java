@@ -1,3 +1,4 @@
+////проверка Ip_address
 package core;
 
 import java.io.IOException;

@@ -113,7 +113,7 @@ public class Fin {
 
 						System.out.println(
 								"Item: " + item + "; US Price: " + priceDouble + "; Local Price: " + item_local_price);
-						System.out.println("=========================================================");
+						System.out.println("========================================================================");
 						break;
 					}// end switch
 				} // end if
