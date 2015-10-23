@@ -20,7 +20,7 @@ public class Fin {
 
 		String us_code = "USD";
 		String country_02_code = "code";
-		final String element_02 = "Rate";
+		final String element = "Rate";
 		final String countryName = "geoplugin_countryName";
 		final String currencyCode = "geoplugin_currencyCode";
 
@@ -102,11 +102,11 @@ public class Fin {
 				if (a == Event.KEY_NAME) {
 					switch (p.getString()) {
 
-					case element_02:
+					case element:
 						p.next();
 						String url_rate = p.getString(); // 0.8792
 						Double rate1 = Double.parseDouble(url_rate);
-						Double priceDouble = Double.parseDouble(price_usd.replaceAll("\\$", ""));
+						Double priceDouble = Double.parseDouble(price_usd.replaceAll("\\$",""));
 
 						// System.out.println(rate1);
 						Double item_local_price = priceDouble * rate1;
